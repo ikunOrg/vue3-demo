@@ -54,6 +54,8 @@ importers:
 
   packages/tsx with script: {}
 
+  packages/tsx with tempate: {}
+
 packages:
 
   /@ampproject/remapping@2.2.1:
