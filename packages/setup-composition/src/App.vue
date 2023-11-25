@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import HelloWorld from "./components/HelloWorld.vue";
+import { ConfigProvider } from "@ikunorg/vue";
 </script>
 
 <template>
+  <ConfigProvider>demo</ConfigProvider>
   <div>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />

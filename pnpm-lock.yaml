@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@ikunorg/vue':
+        specifier: ^0.0.3
+        version: 0.0.3(typescript@5.2.2)
       '@vitejs/plugin-vue':
         specifier: ^4.2.3
         version: 4.4.1(vite@4.5.0)(vue@3.3.8)
@@ -616,6 +619,23 @@ packages:
     resolution: {integrity: sha512-OfX7E2oUDYxtBvsuS4e/jSn4Q9Qb6DzgeYtsAdkPZ47znpoNsMgZw0+tVijiv3uGNR6dgNlty6r9rzIzHjtd/A==}
     dev: true
 
+  /@ikunorg/core@0.0.3:
+    resolution: {integrity: sha512-JaQvq1LZ702NjLIOycbDXDyzHDWDbi/d73Ay5buE3USD9Bd9V4J1eLJI0+bnQ53OJA8hCVarahJVYmx5Bn/tfQ==}
+    dependencies:
+      '@emotion/hash': 0.9.1
+      '@emotion/unitless': 0.8.1
+      '@stencil/core': 4.7.2
+    dev: true
+
+  /@ikunorg/vue@0.0.3(typescript@5.2.2):
+    resolution: {integrity: sha512-k7kLAOI6hnkBwwrHgIS3SHmpAxamaH3se22kDmpyUA4IqfX8e1RiG/sSbSe3o7W2ov2eQ029mdqhrpnGV7KGAg==}
+    dependencies:
+      '@ikunorg/core': 0.0.3
+      vue: 3.3.8(typescript@5.2.2)
+    transitivePeerDependencies:
+      - typescript
+    dev: true
+
   /@jridgewell/gen-mapping@0.3.3:
     resolution: {integrity: sha512-HLhSWOLRi875zjjMG/r+Nv0oCW8umGb0BgEhyX3dDX3egwZtB8PqLnjz3yedt8R5StBrzcg4aBpnh8UA9D1BoQ==}
     engines: {node: '>=6.0.0'}
@@ -651,6 +671,12 @@ packages:
     dependencies:
       core-js: 3.33.2
       nanopop: 2.3.0
+    dev: true
+
+  /@stencil/core@4.7.2:
+    resolution: {integrity: sha512-sPPDYrXiTbfeUF5CCyfqysXK/yfTHC4xYR1+nHzGkS2vhRSBOLp0oPuB+xkJLKA+K2ZqDJUxpOnDxy1CLWwBXA==}
+    engines: {node: '>=16.0.0', npm: '>=7.10.0'}
+    hasBin: true
     dev: true
 
   /@sxzz/popperjs-es@2.11.7:
